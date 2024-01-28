@@ -1,0 +1,121 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .swiper-pagination-bullet{
+    width:12px !important;
+    height:12px !important;
+    border: 1px solid #181ale !important;
+    opacity:100% !important;
+    background:#fff;
+  }
+
+  .swiper-pagination-bullet-active{
+    background: #0067ff !important;
+    border:none !important;
+  }
+
+  .swiper{
+    padding-bottom: 70px !important;
+  }
+
+  .swiper-slide.swiper-slide-next{
+    background:#0067ff;
+    border-radius: 12px;
+    box-shadow: 0px 20px 70px rgba(0, 103, 255, 0.3) !important;
+  }
+
+  .swiper-slide.swiper-slide-next h4,
+  .swiper-slide.swiper-slide-next p{
+    color:#fff !important; 
+  }
+
+  .swiper-pagination{
+    top: 90% !important;
+  }
+
+  .sticky__header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: white;
+    box-shadow: 3px 3px -8px 3px #ddd;
+  }
+
+  @media only screen and (max-width:768px){
+    .navigation{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background: #00000084;
+      display: none;
+    }
+
+    .menu{
+      
+      width: 15rem;
+      height: 40%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: white;
+      z-index: 200;
+      flex-direction: column;
+      justify-content: center;
+      
+      align-items: center;
+      line-height: 30px;
+    }
+
+    .show__menu{
+      display: block;
+    }
+  }
+
+  .glass{
+    background:#FCFBFC;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border:1px solid rgba(255,255,255,0.9)
+    @apply border-4 border-gray-500 shrink-0 h-2/3 w-[50%] rounded-3xl py-20 px-7  min-w-max
+  }
+
+  .profile_img{
+    @apply border-4 border-gray-100 w-[50px] h-[50px] rounded-full shadow-lg cursor-pointer
+     hover:border-gray-200
+  }
+
+  .textbox{
+    @apply border-0 px-5 py-3 rounded-xl w-[80%] lg:w-3/4 shadow-sm text-lg focus:outline-none bg-white mb-4 
+  }
+
+  .textbox2{
+    @apply border-b border-gray-500 focus:border-blue-500 outline-none mb-4
+  }
+
+  .textbox3{
+    @apply border border-periwinkle px-3 py-2 rounded-[5px] w-[80%] lg:w-full text-[15px] focus:outline-none bg-white mb-4 
+  }
+
+  .inputFile{
+    display: none;
+  }
+
+  

@@ -695,7 +695,7 @@ const items=JSON.parse(customer.metadata.data)
 
  try {
      const savedBooking=await newBooking.save()  
-   //  console.log("Processed Order:",savedBooking) 
+     console.log("Processed Order:",savedBooking) 
  } catch (error) {
      console.log(error)
  }
@@ -709,8 +709,8 @@ const createAppointment = async (customer, data) => {
 
       const items=JSON.parse(customer.metadata.data)
       const doctorUsername=items.username
-      console.log(items.username)
-      console.log(doctorUsername)
+     // console.log(items.username)
+     // console.log(doctorUsername)
       if (!user) {
         throw new Error('User not found');
       }
